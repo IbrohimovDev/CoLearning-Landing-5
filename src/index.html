@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gulp with TailwindCSS</title>
+    <link rel="shortcut icon" href="./img/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <section class="pt-0 min-h-screen">
+        <header class="relative z-40">
+            <nav class="main-container flex-row justify-between items-center py-6">
+                <div
+                    class="flex lg:hidden w-full min-h-screen fixed top-0 left-[-100%] justify-center items-center bg-white z-50 duration-300 mobile-menu">
+                    <ul class="flex flex-col min-h-full select-none mobile_menu">
+                        <li class="menu__item"><a class="menu__link underline-animation" href="#">Home</a></li>
+                        <li class="menu__item dropdown-toggle cursor-pointer">
+                            <div class="custom-select" style="width:100px;">
+                                <select>
+                                    <option value="0">Advertise</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="menu__item dropdown-toggle cursor-pointer">
+                            <div class="custom-select" style="width:100px;">
+                                <select>
+                                    <option value="0">Supports</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a class="menu__link underline-animation" href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div
+                    class="relative left-0 sm:left-1/2 flex items-center gap-[14px] justify-start sm:translate-x-[-50%] md:left-0 md:translate-x-0 z-50">
+                    <img src="./img/logo.svg" alt="logo img and StartupLanding txt">
+                    <p class="logoName-1 font-bold text-xl text-[#02073E] opacity-80">StartupLanding</p>
+                    <p class="logoName-2 font-bold text-xl text-[#02073E] opacity-80">Startup</p>
+                </div>
+                <div class="w-[400px] hidden lg:block">
+                    <ul class="flex justify-between items-center select-none">
+                        <li class="menu__item">
+                            <a class="menu__link text-blue hover:text-[#28DCB2] underline-animation"
+                                href="#">Pricing</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link text-blue hover:text-[#28DCB2] underline-animation"
+                                href="#">Support</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link text-blue hover:text-[#28DCB2] underline-animation"
+                                href="#">Register</a>
+                        </li>
+                        <li class="menu__item top-1.5 flex-col">
+                            <a class="menu__link text-[#28DCB2]" href="#">Get Started</a>
+                            <img src="./img/underline.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="mobile-burger block lg:hidden relative z-50 right-0 w-6 h-6 bg-cover bg-no-repeat bg-center">
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="main-container flex-row gap-10">
+                <div class="relative mt-[100px] w-full lg:w-1/2">
+                    <h1
+                        class="text-5xl leading-[133%] xl:text-6xl max-w-[507px] text-[#02073E] text-blue font-bold mb-[19px]">
+                        Professional
+                        Communication For Your Team</h1>
+                    <p class="main-paragraph mb-[47px] max-w-[507px]">Get your blood tests delivered at let home collect
+                        sample from
+                        the victory of the managments that supplies best
+                        design system guidelines ever.</p>
+                    <button class="btn-green h-[60px] mb-[42px]">Explore Now</button>
+                    <div class="flex items-center gap-[28px] h-[30px]">
+                        <div
+                            class="w-[100px] h-[28px] flex items-center grayscale-[70%] opacity-60 hover:grayscale-0 hover:opacity-100 duration-300 cursor-pointer">
+                            <img src="./img/paypal.png" alt="">
+                        </div>
+                        <div
+                            class="w-[85px] h-[28px] flex items-center grayscale-[70%] opacity-60 hover:grayscale-0 hover:opacity-100 duration-300 cursor-pointer">
+                            <img src="./img/google.png" alt="">
+                        </div>
+                        <div
+                            class="w-[123px] h-[24px] flex items-center grayscale-[70%] opacity-60 hover:grayscale-0 hover:opacity-100 duration-300 cursor-pointer">
+                            <img src="./img/dropbox.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block w-1/2 relative">
+                    <div class="relative mt-[100px]">
+                        <img class="layer absolute z-30 top-[81px] -left-10" data-speed="5" src="./img/triangle.svg" alt="">
+                        <img class="layer absolute z-30 bottom-[89px] right-20" data-speed="2" src="./img/zigzag.svg" alt="">
+                        <img class="layer absolute -top-12 left-[45%] w-[302px] h-[346px]" data-speed="4" src="./img/dashed.svg" alt="">
+                        <img class="relative rounded-[5px] mt-10 w-9/12 h-auto  2xl:w-[503px] 2xl:h-[628px] main__img"
+                            src="./img/hero.png" alt="">
+                        <div class="main__before 2xl:w-[503px] 2xl:h-[628px]"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section class="flex flex-col items-center">
+        <h3 class="title-lg mb-[10px]">Go Beyond unlimited features</h3>
+        <p class="main-paragraph text-center mb-[90px] max-w-[583px]">Focus only on the meaning we take care of design.
+            As soon as the meeting end you can export with one click into your preferred format.</p>
+        <div class="main-container flex-col lg:flex-row">
+            <div class="w-full lg:w-1/2 flex flex-wrap justify-evenly">
+                <div class="mb-10">
+                    <div class="imgBox">
+                        <img src="./img/lamp.svg" alt="">
+                    </div>
+                    <h6 class="title-sm">Fast Performance</h6>
+                    <p class="main-paragraph max-w-[240px]">See where you're making and spending money in real.</p>
+                </div>
+                <div class="mb-10">
+                    <div class="imgBox">
+                        <img class="relative -top-[5px] -right-[5px]" src="./img/targert.jpg" alt="">
+                    </div>
+                    <h6 class="title-sm">Fast Performance</h6>
+                    <p class="main-paragraph max-w-[240px]">See where you're making and spending money in real.</p>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 flex flex-wrap justify-evenly">
+                <div class="mb-10">
+                    <div class="imgBox">
+                        <img src="./img/rocket.svg" alt="">
+                    </div>
+                    <h6 class="title-sm">Fast Performance</h6>
+                    <p class="main-paragraph max-w-[240px]">See where you're making and spending money in real.</p>
+                </div>
+                <div class="mb-10">
+                    <div class="imgBox">
+                        <img src="./img/cup.svg" alt="">
+                    </div>
+                    <h6 class="title-sm">Fast Performance</h6>
+                    <p class="main-paragraph max-w-[240px]">See where you're making and spending money in real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F9FAFC]">
+        <div class="main-container lg:flex-row">
+            <div class="w-4/5 lg:w-1/2 flex flex-wrap gap-[45px] stats-wrapper">
+                <div class="relative flex flex-col gap-[45px] top-[107px] mb-[104px]">
+                    <div class="stats-wrapper__box">
+                        <h2> 80K+ </h2>
+                        <p>We have more than <br> customers</p>
+                    </div>
+                    <div class="stats-wrapper__box">
+                        <h2 class="text-[#FA578E]"> 90+ </h2>
+                        <p>Daily updated blog <br> post main</p>
+                    </div>
+                </div>
+                <div class="relative flex flex-col gap-[45px] top-[60px] mb-[107px]">
+                    <div class="stats-wrapper__box">
+                        <h2 class="text-[#FF753A]"> 150+ </h2>
+                        <p>Free online video tutorials <br>videos available</p>
+                    </div>
+                    <div class="stats-wrapper__box">
+                        <h2 class="text-[#28DCB2]"> &3M </h2>
+                        <p>Hob posted everydays <br> with qualification</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <h2 class="title-xl mb-5 text-left max-w-[510px]">Smart Jackpots that you may love this anytime &
+                    anywhere</h2>
+                <p class="main-paragraph mb-10 max-w-[420px]">Get your tests delivered at let home collect sample from
+                    the victory of
+                    the managments that supplies best design system guidelines ever.</p>
+                <ul class="mb-[30px]">
+                    <li class="flex items-center leading-[281%]"><img class="mr-[10px]" src="./img/verify.svg" alt="">
+                        Unlimited design
+                        possibility</li>
+                    <li class="flex items-center leading-[281%]"><img class="mr-[10px]" src="./img/verify.svg" alt="">
+                        Completely
+                        responsive features</li>
+                </ul>
+
+                <div class="flex items-center learn_more cursor-pointer">
+                    <a href="#" class="mr-[8px] font-bold text-base leading-[42px] text-[#4F96FF]">Learn
+                        more</a><img src="./img/chevron-right.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col items-center">
+        <h3 class="title-lg max-w-[622px]">Leading companies trust us to develop most powerful software with our talent
+            team</h3>
+        <p class="main-paragraph max-w-[623px]">Every email, web page, and social media post makes an impression on your
+            customers.
+            With our software you can be confident it's impression.</p>
+        <div class="main-container relative" style="filter: drop-shadow(0px 15px 50px rgba(88, 123, 156, 0.1));">
+            <div class="rounded-[7px] overflow-hidden z-10">
+                <video src="./img/video.mp4" onmouseenter="showBtn()" onmouseleave="hideBtn()" onclick="Play()"
+                    class="video" style="width:100% !important">
+                    <div class="absolute z-20 w-full h-full top-0 left-0" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 64.06%, rgba(3, 1, 13, 0.5) 100%);
+                border-radius: 5px;"></div>
+                </video>
+            </div>
+            <div class="flex items-center gap-[16px] absolute bottom-[32px] left-1/2 translate-x-[-50%] z-20">
+                <div onclick="Play()" class="min-w-[28px] w-[28px] h-[28px]">
+                    <img class="play duration-300 select-none" src="./img/play.svg" alt="play icon">
+                </div>
+                <a href="#" class="font-bold text-[17px] text-white">Watch full video</a>
+            </div>
+            <div class="layer absolute top-[90px] left-20 z-30" data-speed="5">
+                <img src="./img/triangle.svg" alt="">
+            </div>
+            <div class="layer absolute top-[60px] right-20 z-30" data-speed="2">
+                <img src="./img/zigzag.svg" alt="">
+            </div>
+            <div class="layer absolute -bottom-[50px] right-[57px]" data-speed="-5">
+                <img src="./img/star.svg" alt="">
+            </div>
+            <div class="layer absolute -bottom-[55px] left-[234px] w-[140px] h-[140px]" data-speed="6">
+                <img src="./img/dashed.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F9FAFC] flex flex-col items-center">
+        <h3 class="title-lg mb-[10px]">Amazing useful features</h3>
+        <p class="main-paragraph text-center max-w-[583px] mb-[120px]">Focus only on the meaning, we take care of the
+            design. As soon as the
+            meeting end you can export in one click into your preferred format.</p>
+        <div class="main-container flex-col lg:flex-row">
+            <div class="w-full lg:w-1/2 mr-[16px]">
+                <div class="flex flex-col md:flex-row mb-[92px]">
+                    <div class="imgBox mb-10 mr-[26px]">
+                        <img src="./img/lamp.svg" alt="">
+                    </div>
+                    <div>
+                        <h6 class="title-sm font-bold">Fast performance</h6>
+                        <p class="main-paragraph">Let’s just get this out of the way - there will always be a kit
+                            version of Eduflow. Built by educators, we believe in equiting education for all. Paid
+                            subscriptions allow us to continue helping learners around the world.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row mb-[92px]">
+                    <div class="imgBox mb-10 mr-[26px]">
+                        <img src="./img/help.svg" alt="">
+                    </div>
+                    <div>
+                        <h6 class="title-sm font-bold">Fast performance</h6>
+                        <p class="main-paragraph">Let’s just get this out of the way - there will always be a kit
+                            version of Eduflow. Built by educators, we believe in equiting education for all. Paid
+                            subscriptions allow us to continue helping learners around the world.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="flex flex-col md:flex-row mb-[92px]">
+                    <div class="imgBox mb-10 mr-[26px]">
+                        <img src="./img/diamond.svg" alt="">
+                    </div>
+                    <div>
+                        <h6 class="title-sm font-bold">Fast performance</h6>
+                        <p class="main-paragraph">Let’s just get this out of the way - there will always be a kit
+                            version of Eduflow. Built by educators, we believe in equiting education for all. Paid
+                            subscriptions allow us to continue helping learners around the world.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row mb-[92px]">
+                    <div class="imgBox mb-10 mr-[26px]">
+                        <img src="./img/winner.svg" alt="">
+                    </div>
+                    <div>
+                        <h6 class="title-sm font-bold">Fast performance</h6>
+                        <p class="main-paragraph">Let’s just get this out of the way - there will always be a kit
+                            version of Eduflow. Built by educators, we believe in equiting education for all. Paid
+                            subscriptions allow us to continue helping learners around the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F9FAFC]">
+        <div class="main-container flex-col lg:flex-row">
+            <div class="w-4/5 lg:w-1/2">
+                <img src="./img/voice-record.png" alt="">
+            </div>
+            <div class="w-full lg:w-1/2 flex flex-col sm:items-center">
+                <h2 class="title-xl mb-5 text-left sm:text-center lg:text-left max-w-[510px]">Ultimate widgets of
+                    collection that will be
+                    used anywhere</h2>
+                <p class="main-paragraph text-left sm:text-center lg:text-left mb-10 max-w-[420px]">Get your tests
+                    delivered at let home collect sample from
+                    the victory of
+                    the managments that supplies best design system guidelines ever.</p>
+                <ul class="mb-[30px]">
+                    <li class="flex items-center leading-[281%]"><img class="mr-[10px]" src="./img/verify.svg" alt="">
+                        Unlimited design
+                        possibility</li>
+                    <li class="flex items-center leading-[281%]"><img class="mr-[10px]" src="./img/verify.svg" alt="">
+                        Completely
+                        responsive features</li>
+                </ul>
+
+                <div class="flex items-center learn_more cursor-pointer">
+                    <a href="#" class="mr-[8px] font-bold text-base leading-[42px] text-[#4F96FF]">Learn
+                        more</a><img src="./img/chevron-right.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col items-center">
+        <p class="title-xs">PRICING PLAN</p>
+        <h3 class="title-lg">Meet our exciting pricing policy</h3>
+        <p class="main-paragraph text-center max-w-[583px] mb-[43px]">Focus only on the meaning, we take care of the
+            design. As soon as the meeting end you
+            can export in one click into your preferred format.</p>
+        <div
+            class="tab  relative flex flex-row w-72 rounded-md justify-center items-center mb-[50px] z-10 p-1 bg-[#F7F8FB]">
+            <div
+                class="relative w-1/2 p-3 text-center rounded-md text-black text-sm font-medium cursor-pointer tab-btn active">
+                Monthly plan
+            </div>
+            <div
+                class="relative w-1/2 p-3 text-center rounded-md text-black text-sm font-medium cursor-pointer tab-btn">
+                Annual
+                plan</div>
+            <div
+                class="absolute -top-[12.5px] right-[39px] h-[25px] w-[82px] flex items-center justify-center rounded-[50px] z-20 bg-[#36CDA4]">
+                <p class="text-[13px] font-bold -tracking-[0.14] text-white">SAVE 20%</p>
+            </div>
+        </div>
+
+        <div class="main-container relative min-h-[500px]">
+
+            <div class="flex gap-[30px] items-stretch flex-row flex-wrap justify-around tab-body active">
+                <div
+                    class="relative max-w-[480px] min-w-[300px] px-10 pt-16 pb-[50px] duration-300 rounded-[10px] hover:border-[2.5px] hover:border-[#3FDBB1] mb-10 cursor-pointer border border-solid border-[#F3F4F5]">
+                    <h5 class="title-md">Free Plan</h5>
+                    <p class="main-paragraph mb-10">For pro level developers</p>
+                    <ul class="mb-[70px]">
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                        <li class="copacity-60"><img src="./img/deny.svg" class="mr-[13px]" alt="verify-icon">Ultimate
+                            access to all course, exercises and assessments</li>
+                        <li class="copacity-60"><img src="./img/deny.svg" class="mr-[13px]" alt="verify-icon">Ultimate
+                            access to all course, exercises and assessments</li>
+                    </ul>
+                    <div class="flex flex-col items-center">
+                        <button class="bg-[#FCF2E8] hover:bg-[#e6ddd4] text-[#EF9E48] mb-4">Start
+                            free trial</button>
+                    </div>
+                </div>
+                <div
+                    class="relative max-w-[480px] min-w-[300px] px-10 pt-16 pb-[50px] duration-300 rounded-[10px] hover:border-[2.5px] hover:border-[#3FDBB1] mb-10 cursor-pointer border border-solid border-[#F3F4F5]">
+
+                    <div
+                        class="absolute flex flex-col w-[118px] h-[31px] items-center top-5 bg-[#EF9E48] rounded-[3px]">
+                        <p class="text-sm leading-[28px] tracking-[-0.14px] text-white font-bold">Recomended</p>
+                    </div>
+                    <div class="flex items-center justify-between mb-10">
+                        <div>
+                            <h5 class="title-md">Premium</h5>
+                            <p class="main-paragraph">For startup enterprise</p>
+                        </div>
+                        <div>
+                            <p class="text-base text-right text-[#343D48] leading-[28px] font-normal">Starting from</p>
+                            <p
+                                class="text-[#25CB9E] text-[26px] text-right leading-[34px] font-bold tracking-[-0.55px]">
+                                49.99/mo</p>
+                        </div>
+                    </div>
+                    <ul class="mb-[70px]">
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                    </ul>
+                    <div class="flex flex-col items-center">
+                        <button class="bg-[#FCF2E8] hover:bg-[#e6ddd4] text-[#EF9E48] mb-4">Start
+                            free trial</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-[30px] items-stretch flex-row flex-wrap justify-around tab-body">
+                <div
+                    class="relative max-w-[480px] min-w-[300px] px-10 pt-16 pb-[50px] duration-300 rounded-[10px] hover:border-[2.5px] hover:border-[#3FDBB1] mb-10 cursor-pointer border border-solid border-[#F3F4F5]">
+                    <h5 class="title-md">Free Plan</h5>
+                    <p class="main-paragraph mb-10">For pro level developers</p>
+                    <ul class="mb-[70px]">
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                        <li class="copacity-60"><img src="./img/deny.svg" class="mr-[13px]" alt="verify-icon">Ultimate
+                            access to all course, exercises and assessments</li>
+                        <li class="copacity-60"><img src="./img/deny.svg" class="mr-[13px]" alt="verify-icon">Ultimate
+                            access to all course, exercises and assessments</li>
+                    </ul>
+                    <div class="flex flex-col items-center">
+                        <button class="bg-[#FCF2E8] hover:bg-[#e6ddd4] text-[#EF9E48] mb-4">Start
+                            free trial</button>
+                    </div>
+                </div>
+                <div
+                    class="relative max-w-[480px] min-w-[300px] px-10 pt-16 pb-[50px] duration-300 rounded-[10px] hover:border-[2.5px] hover:border-[#3FDBB1] mb-10 cursor-pointer border border-solid border-[#F3F4F5]">
+
+                    <div
+                        class="absolute flex flex-col w-[118px] h-[31px] items-center top-5 bg-[#EF9E48] rounded-[3px]">
+                        <p class="text-sm leading-[28px] tracking-[-0.14px] text-white font-bold">Recomended</p>
+                    </div>
+                    <div class="flex items-center justify-between mb-10">
+                        <div>
+                            <h5 class="title-md">Premium</h5>
+                            <p class="main-paragraph">For startup enterprise</p>
+                        </div>
+                        <div>
+                            <p class="text-base text-right text-[#343D48] leading-[28px] font-normal">Starting from</p>
+                            <p
+                                class="text-[#25CB9E] text-[26px] text-right leading-[34px] font-bold tracking-[-0.55px]">
+                                49.99/mo</p>
+                        </div>
+                    </div>
+                    <ul class="mb-[70px]">
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                        <li><img src="./img/verify.svg" class="mr-[13px]" alt="verify-icon">Ultimate access to all
+                            course, exercises and assessments</li>
+                    </ul>
+                    <div class="flex flex-col items-center">
+                        <button class="bg-[#FCF2E8] hover:bg-[#e6ddd4] text-[#EF9E48] mb-4">Start
+                            free trial</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section>
+        <h3 class="title-lg mb-[10px]">Do you have any question</h3>
+        <p class="main-pargraph text-center mb-[82px]">Our support team ready to help you, please contact with them</p>
+
+        <div class="flex flex-col items-center">
+            <div class="accordion__contentBox active">
+                <div class="accordion__label">
+                    <div>
+                        <img src="./img/divide.png" alt="">
+                    </div>
+                    <h6 class="accordion__title">How do I download the
+                        App?</h6>
+                </div>
+                <div class="accordion__content">
+                    <p class="main-paragraph text-left pb-8">To download the Scoot app, you can search “Scoot” in
+                        both the App and Google Play stores. An
+                        even simpler way to do it would be to click the relevant link at the bottom of this page and
+                        you’ll be re-directed to the correct page.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__contentBox">
+                <div class="accordion__label">
+                    <div>
+                        <img src="./img/add.png" alt="">
+                    </div>
+                    <h6 class="accordion__title">How do I download the
+                        App?</h6>
+                </div>
+                <div class="accordion__content">
+                    <p class="main-paragraph text-left pb-8">To download the Scoot app, you can search “Scoot” in
+                        both the App and Google Play stores. An
+                        even simpler way to do it would be to click the relevant link at the bottom of this page and
+                        you’ll be re-directed to the correct page.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__contentBox">
+                <div class="accordion__label">
+                    <div>
+                        <img src="./img/add.png" alt="">
+                    </div>
+                    <h6 class="accordion__title">How do I download the
+                        App?</h6>
+                </div>
+                <div class="accordion__content">
+                    <p class="main-paragraph text-left pb-8">To download the Scoot app, you can search “Scoot” in
+                        both the App and Google Play stores. An
+                        even simpler way to do it would be to click the relevant link at the bottom of this page and
+                        you’ll be re-directed to the correct page.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__contentBox">
+                <div class="accordion__label">
+                    <div>
+                        <img src="./img/add.png" alt="">
+                    </div>
+                    <h6 class="accordion__title">How do I download the
+                        App?</h6>
+                </div>
+                <div class="accordion__content">
+                    <p class="main-paragraph text-left pb-8">To download the Scoot app, you can search “Scoot” in
+                        both the App and Google Play stores. An
+                        even simpler way to do it would be to click the relevant link at the bottom of this page and
+                        you’ll be re-directed to the correct page.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion__contentBox">
+                <div class="accordion__label">
+                    <div>
+                        <img src="./img/add.png" alt="">
+                    </div>
+                    <h6 class="accordion__title">How do I download the
+                        App?</h6>
+                </div>
+                <div class="accordion__content">
+                    <p class="main-paragraph text-left pb-8">To download the Scoot app, you can search “Scoot” in
+                        both the App and Google Play stores. An
+                        even simpler way to do it would be to click the relevant link at the bottom of this page and
+                        you’ll be re-directed to the correct page.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="bg-[#F9FAFC]">
+        <div class="main-container flex-row flex-wrap justify-evenly items-start gap-[10px]">
+            <div class="mb-5">
+                <h6 class="title-sm">Company</h6>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Affilate</a></li>
+                    <li><a href="#">Careers & Culture</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="mb-5">
+                <h6 class="title-sm">About us </h6>
+                <ul>
+                    <li><a href="#">Support center</a></li>
+                    <li><a href="#">Customer support</a></li>
+                    <li><a href="#">About us </a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Popular campaign</a></li>
+                </ul>
+            </div>
+            <div class="mb-5">
+                <h6 class="title-sm">Our information</h6>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Careers & Culture</a></li>
+                    <li><a href="#">Step Map</a></li>
+                    <li><a href="#">Store Hours</a></li>
+                </ul>
+            </div>
+            <div class="mb-5">
+                <h6 class="title-sm">My account</h6>
+                <ul>
+                    <li><a href="#">Press inquires</a></li>
+                    <li><a href="#">Social media</a></li>
+                    <li><a href="#">Directories</a></li>
+                    <li><a href="#">Images & B-roli</a></li>
+                    <li><a href="#">Permissions</a></li>
+                </ul>
+            </div>
+            <div class="mb-5">
+                <h6 class="title-sm">Policy</h6>
+                <ul>
+                    <li><a href="#">Application security</a></li>
+                    <li><a href="#">Software principles</a></li>
+                    <li><a href="#">Unwanted software policy</a></li>
+                    <li><a href="#">Responsible supply chain</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Parallax.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <!-- My.js -->
+    <script src="./js/scripts.js"></script>
+
+
+</body>
+
+</html>
